@@ -21,8 +21,7 @@
 		
 		function viewEdit($nim){
 			//panggil model select data mahasiswa dengan nim ...
-			$this->model->selectMhs($nim);
-			$data = $this->model->selectAll();
+			$data = $this->model->selectMhs($nim);
 			$row = $this->model->fetch($data); //fetch hasil select
 			include "view/view_edit.php"; //menampilkan halaman untuk mengedit data
 		}
