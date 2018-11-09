@@ -12,8 +12,7 @@
 				<td>Program</td>
 				<td colspan="2">Aksi</td>
 			</tr>
-			<?php $data = $this->model->selectAll();
-			while($row = $this->model->fetch($data)){
+			<?php while($row = $this->model->fetch($data)){
 				echo "
 					<tr>
 						<td>$row[0]</td>
