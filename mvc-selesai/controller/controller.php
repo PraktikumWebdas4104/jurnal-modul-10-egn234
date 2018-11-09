@@ -15,7 +15,7 @@
 		function index(){
 			//pada class ini (controller), akses variabel model, akses fungsi selectAll (kalo bingung lihat di class model ada fungsi selectAll)
 			//panggil model fungsi selectall
-			$this->model->selectAll();
+			$data = $this->model->selectAll();
 			include "view/view.php"; //memamnggil view.php pada folder view
 		}
 		
