@@ -25,7 +25,7 @@
 		
 		function updateMhs($nim, $nama, $angkatan, $fakultas, $prodi){
 			//query update nim, nama, angkatan, fakultas, prodi
-			$query = "UPDATE mahasiswa SET nim = '$nim', nama = '$nama', angkatan = '$angkatan', fakultas = '$fakultas', program = '$prodi' WHERE nim = '$nim'";
+			$query = "UPDATE mahasiswa SET nama = '$nama', angkatan = '$angkatan', fakultas = '$fakultas', program = '$prodi' WHERE nim = '$nim'";
 			return $this->execute($query);
 		}
 		
